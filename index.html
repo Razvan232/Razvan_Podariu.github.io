@@ -2,37 +2,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profilul Profesional - Razvan Podariu</title>
+    <title>Razvan Podariu - Profil Profesional</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
+            color: #333;
         }
         header {
-            background-color: #4CAF50;
+            background-color: #0066cc;
             color: white;
             text-align: center;
-            padding: 1em;
+            padding: 3em 0;
+        }
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.2em;
+            font-style: italic;
         }
         section {
-            padding: 2em;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3em 2em;
         }
         h2 {
-            color: #333;
+            color: #0066cc;
+            font-size: 1.8em;
+            margin-bottom: 1em;
+            border-bottom: 2px solid #0066cc;
+            padding-bottom: 0.3em;
         }
         ul {
             list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        li {
+            font-size: 1.1em;
+            margin-bottom: 0.8em;
+        }
+        li strong {
+            color: #0066cc;
         }
         footer {
             background-color: #333;
             color: white;
             text-align: center;
-            padding: 1em;
-            position: fixed;
+            padding: 1.5em;
+            position: relative;
             width: 100%;
-            bottom: 0;
+        }
+        footer p {
+            margin: 0;
+            font-size: 1em;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2em;
+        }
+        .left, .right {
+            flex: 1;
+        }
+        .left {
+            max-width: 60%;
+        }
+        .right {
+            max-width: 35%;
+            background-color: #f1f1f1;
+            padding: 2em;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .right h2 {
+            text-align: center;
+            font-size: 1.5em;
+            margin-bottom: 1em;
+        }
+        .right ul li {
+            font-size: 1.1em;
+            padding-left: 1.2em;
+            text-indent: -1.2em;
         }
     </style>
 </head>
@@ -40,63 +95,83 @@
 
     <header>
         <h1>Razvan Podariu</h1>
-        <p>Bine ați venit pe profilul meu profesional!</p>
+        <p>Profilul meu profesional</p>
     </header>
 
     <section>
-        <h2>Profil</h2>
-        <p>Îmi place să fac lucrurile să funcționeze mai eficient și sunt mereu în căutare de noi metode pentru a îmbunătăți eficiența activităților mele. Sunt pasionat de inovație și dornic să contribui la progresul tehnologic într-un mediu dinamic.</p>
+        <div class="container">
+            <div class="left">
+                <h2>Profil</h2>
+                <p>Îmi place să fac lucrurile să funcționeze mai eficient și sunt mereu în căutare de noi metode pentru a îmbunătăți eficiența activităților mele. Sunt pasionat de inovație și dornic să contribui la progresul tehnologic într-un mediu dinamic.</p>
 
-        <h2>1. Educație</h2>
-        <ul>
-            <li><strong>Ingineria Sistemelor</strong> - Facultatea de Automatică și Calculatoare, Universitatea Tehnică din Cluj-Napoca (2021 - 2025)</li>
-        </ul>
+                <h2>Educație</h2>
+                <ul>
+                    <li><strong>Ingineria Sistemelor</strong> - Facultatea de Automatică și Calculatoare, Universitatea Tehnică din Cluj-Napoca (2021 - 2025)</li>
+                </ul>
 
-        <h2>2. Experiență Profesională</h2>
-        <ul>
-            <li><strong>IT Technician</strong> - Netrom Holding (2022 - 2023)</li>
-            <ul>
-                <li>Administrarea rețelelor și serverelor</li>
-                <li>Suport tehnic pentru clienți și soluții personalizate</li>
-                <li>Configurarea și întreținerea VPN-urilor și aplicațiilor Office</li>
-                <li>Administrare Linux, asamblare și mentenanță hardware</li>
-            </ul>
-        </ul>
+                <h2>Experiență Profesională</h2>
+                <ul>
+                    <li><strong>IT Technician</strong> - Netrom Holding (2022 - 2023)</li>
+                    <ul>
+                        <li>Administrarea rețelelor și serverelor</li>
+                        <li>Suport tehnic pentru clienți și soluții personalizate</li>
+                        <li>Configurarea și întreținerea VPN-urilor și aplicațiilor Office</li>
+                        <li>Administrare Linux, asamblare și mentenanță hardware</li>
+                    </ul>
+                </ul>
 
-        <h2>3. Proiecte</h2>
-        <ul>
-            <li><strong>ClujHackathon 2024</strong> - AI pentru vârstnici</li>
-            <li><strong>Polihack 2024</strong> - EdTech pentru onboarding eficient</li>
-        </ul>
+                <h2>Proiecte</h2>
+                <ul>
+                    <li><strong>ClujHackathon 2024</strong> - AI pentru vârstnici</li>
+                    <li><strong>Polihack 2024</strong> - EdTech pentru onboarding eficient</li>
+                </ul>
 
-        <h2>4. Competențe Tehnice</h2>
-        <ul>
-            <li>Java, HTML5, CSS3, SASS, JavaScript, C++, C, Bash</li>
-            <li>Instrumente CAD pentru desene tehnice</li>
-            <li>Embedded systems, rețelistică, electronică și mecanică</li>
-            <li>Asamblare circuite și calculatoare</li>
-        </ul>
+                <h2>Competențe Tehnice</h2>
+                <ul>
+                    <li>Java, HTML5, CSS3, SASS, JavaScript, C++, C, Bash</li>
+                    <li>Instrumente CAD pentru desene tehnice</li>
+                    <li>Embedded systems, rețelistică, electronică și mecanică</li>
+                    <li>Asamblare circuite și calculatoare</li>
+                </ul>
 
-        <h2>5. Abilități</h2>
-        <ul>
-            <li>Lucru în echipă</li>
-            <li>Adaptabilitate</li>
-            <li>Organizare</li>
-            <li>Comunicare eficientă</li>
-        </ul>
+                <h2>Abilități</h2>
+                <ul>
+                    <li>Lucru în echipă</li>
+                    <li>Adaptabilitate</li>
+                    <li>Organizare</li>
+                    <li>Comunicare eficientă</li>
+                </ul>
 
-        <h2>6. Limbile Străine Vorbite</h2>
-        <ul>
-            <li>Engleză - Avansat</li>
-            <li>Română - Nativ</li>
-        </ul>
+                <h2>Limbile Străine Vorbite</h2>
+                <ul>
+                    <li>Engleză - Avansat</li>
+                    <li>Română - Nativ</li>
+                </ul>
 
-        <h2>7. Hobby-uri</h2>
-        <ul>
-            <li>Călătorit</li>
-            <li>Tehnologie</li>
-            <li>Fitness</li>
-        </ul>
+                <h2>Hobby-uri</h2>
+                <ul>
+                    <li>Călătorit</li>
+                    <li>Tehnologie</li>
+                    <li>Fitness</li>
+                </ul>
+            </div>
+
+            <div class="right">
+                <h2>Abilități Cheie</h2>
+                <ul>
+                    <li><strong>Programare:</strong> C++, Java, HTML5, CSS3, JavaScript, Bash</li>
+                    <li><strong>Tehnologii:</strong> Linux, MySQL, Arduino, Autocad</li>
+                    <li><strong>Hardware:</strong> Asamblare și mentenanță PC, rețelistică</li>
+                    <li><strong>CAD:</strong> Desene tehnice și programare</li>
+                </ul>
+
+                <h2>Contact</h2>
+                <ul>
+                    <li><strong>Email:</strong> razvan.podariu@email.com</li>
+                    <li><strong>Telefon:</strong> +40 123 456 789</li>
+                </ul>
+            </div>
+        </div>
     </section>
 
     <footer>
